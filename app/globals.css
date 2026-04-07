@@ -116,15 +116,15 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
+.dark {
+  color-scheme: dark;
+}
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
-  }
+
 }
