@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ModeToggle } from './theme-toggle'
 
 const Header = () => {
   return (
@@ -17,6 +18,7 @@ const Header = () => {
         />
       </Link>
       <div className="flex items-center gap-3">
+         <ModeToggle />
 <Show when="signed-out">
               <SignInButton>
                 <Button variant={"ghost"} >Sign in</Button>

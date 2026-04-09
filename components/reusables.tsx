@@ -1,11 +1,11 @@
 import React from "react";
 
-export const GrayTitle = ({ children }:{children:React.ReactNode}) => (
+export const GrayTitleComponent = ({ children }:{children:React.ReactNode}) => (
   <span className="bg-linear-to-br from-stone-100 via-stone-300 to-stone-500 bg-clip-text text-transparent">
     {children}
   </span>
 );
-export const GoldTitle = ({ children }:{children:React.ReactNode}) => (
+export const GoldTitleComponent = ({ children }:{children:React.ReactNode}) => (
   <span className="bg-linear-to-br from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent">
     {children}
   </span>
@@ -20,9 +20,9 @@ export const SectionHeading = ({ gray, gold }:{gray:string,gold:string}) => (
   <h2
     className={`font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.1] tracking-[-0.025em]`}
   >
-    <GrayTitle>{gray}</GrayTitle>
+    <GrayTitleComponent>{gray}</GrayTitleComponent>
     <br />
-    <GoldTitle>{gold}</GoldTitle>
+    <GoldTitleComponent>{gold}</GoldTitleComponent>
   </h2>
 );
 
@@ -33,8 +33,8 @@ export default function PageHeader({ label, gray, gold, description, right }:{ l
         <div>
           {label && <SectionLabel>{label}</SectionLabel>}
           <h1 className="font-serif text-5xl tracking-tight mt-1">
-            {gray && <GrayTitle>{gray} </GrayTitle>}
-            {gold && <GoldTitle>{gold}</GoldTitle>}
+            {gray && <GrayTitleComponent>{gray} </GrayTitleComponent>}
+            {gold && <GoldTitleComponent>{gold}</GoldTitleComponent>}
           </h1>
           {description && (
             <p className="text-sm text-stone-500 font-light mt-2">
