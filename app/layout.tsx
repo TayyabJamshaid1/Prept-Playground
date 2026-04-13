@@ -30,20 +30,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider appearance={{theme:dark}}>
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${lora.variable} ${dmSans.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"  // Changed from "system" to "dark"
-          enableSystem={false} // Disable system preference
-          disableTransitionOnChange
-        >
-          <Header/>
-          <main className="min-h-screen">{children}</main>
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider appearance={{ theme: dark }}>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${lora.variable} ${dmSans.variable} font-sans`}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark" // Changed from "system" to "dark"
+            enableSystem={false} // Disable system preference
+            disableTransitionOnChange
+          >
+            <Header />
+            <main className="min-h-screen">{children}</main>
+
+            <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
+              Made with ❤️ by RoadsideCoder
+            </footer>
+          </ThemeProvider>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
