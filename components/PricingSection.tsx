@@ -23,7 +23,8 @@ export default function PricingSection() {
     : isOnFree
     ? "free"
     : null;
-
+  ///working on a prept app
+  //continuously improving it with new features and better ui/ux 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
       {PLANS.map((plan) => {
