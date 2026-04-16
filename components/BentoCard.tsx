@@ -1,5 +1,15 @@
-export function BentoCard({ icon, title, desc, children, className = "" }:{
-    icon?:React.ReactElement|String,title?:React.ReactElement|String,desc?:String,children?:React.ReactNode,className?:String
+export function BentoCard({
+  icon,
+  title,
+  desc,
+  children,
+  className = "",
+}: {
+  icon?: React.ReactElement | String;
+  title?: React.ReactElement | String;
+  desc?: String;
+  children?: React.ReactNode;
+  className?: String;
 }) {
   return (
     <div

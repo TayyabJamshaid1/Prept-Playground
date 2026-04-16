@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </BentoCard>
           </div>
-             <div className="col-span-12 md:col-span-5">
+          <div className="col-span-12 md:col-span-5">
             <BentoCard
               icon={<Wallet size={16} className="text-amber-400" />}
               title={<GrayTitleComponent>Credit System</GrayTitleComponent>}
@@ -188,7 +188,9 @@ export default function Home() {
           <div className="col-span-12 md:col-span-6">
             <BentoCard
               icon="📊"
-              title={<GrayTitleComponent>AI Feedback Reports</GrayTitleComponent>}
+              title={
+                <GrayTitleComponent>AI Feedback Reports</GrayTitleComponent>
+              }
               desc="Post-interview analysis by Gemini with actionable insights."
             >
               <MockUI rows={5} />
@@ -198,7 +200,9 @@ export default function Home() {
           <div className="col-span-12 md:col-span-6">
             <BentoCard
               icon="🗓️"
-              title={<GoldTitleComponent>Slot-based Scheduling</GoldTitleComponent>}
+              title={
+                <GoldTitleComponent>Slot-based Scheduling</GoldTitleComponent>
+              }
               desc="Interviewers set availability once. Interviewees pick from open slots and confirm with one click — no back-and-forth needed."
             >
               <div className="flex flex-wrap gap-2 mt-5">
@@ -256,7 +260,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-  {/* PRICING */}
+      {/* PRICING */}
       <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <SectionLabel>Pricing</SectionLabel>
@@ -271,7 +275,7 @@ export default function Home() {
 
         <PricingSection />
       </section>
-  {/* CTA */}
+      {/* CTA */}
       <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
         <div className="relative border border-amber-400/20 rounded-3xl px-3 sm:px-16 py-20 bg-linear-to-br from-amber-400/5 text-center overflow-hidden">
           <StarsBackgroundDemo />
