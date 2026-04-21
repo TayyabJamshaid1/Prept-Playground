@@ -34,7 +34,7 @@ const shouldAllocateCredits = (dbUser:any, currentPlan:string) => {
 };
 
 export const checkUser = async () => {
-  const user = await currentUser();
+  const user = await currentUser();  
   if (!user) return null;
 
   try {

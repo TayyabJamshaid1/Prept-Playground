@@ -2,12 +2,14 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "randomuser.me",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "randomuser.me",
+    //   },
+    // ],
+    unoptimized: true,
+  
   },
 };
 
