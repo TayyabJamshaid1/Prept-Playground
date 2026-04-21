@@ -67,7 +67,7 @@ export const PLANS = [
     price: "$29",
     credits: "5 credits / month",
     featured: true,
-    planId: "cplan_3Az9LokzTcywp64E2clEolnnqhB",
+    planId: "cplan_3C8kNDtqPo6HRgSot1q1BowQG9z",
     slug: "starter",
     features: [
       "5 mock interview sessions",
@@ -82,7 +82,7 @@ export const PLANS = [
     price: "$69",
     credits: "15 credits / month",
     featured: false,
-    planId: "cplan_3Az9PNOYND36xNf4JEkpT22w4X2",
+    planId: "cplan_3CgVvsHL9rln8x58CE6zkIczIve",
     slug: "pro",
     features: [
       "15 mock interview sessions",
