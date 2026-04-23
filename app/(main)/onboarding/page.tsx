@@ -35,11 +35,11 @@ export default function OnboardingPage() {
     categories: [],
   });
 
-  //   useEffect(() => {
-  //     if (data && !loading) {
-  //       router.push(role === "INTERVIEWER" ? "/dashboard" : "/explore");
-  //     }
-  //   }, [data, router]);
+    useEffect(() => {
+      if (data && !loading) {
+        router.push(role === "INTERVIEWER" ? "/dashboard" : "/explore");
+      }
+    }, [data, router]);
 
   const toggleCategory = (val: string) => {
     setForm((prev) => ({
