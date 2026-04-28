@@ -139,7 +139,7 @@ export default function OnboardingPage() {
               </Button>
             </div>
 
-            {/* interviewer form */}
+            {/* interviewer form implementation */}
             {role === "INTERVIEWER" && (
               <div className="bg-[#0f0f11] border border-white/10 rounded-2xl p-8 flex flex-col gap-6">
                 {/* Title + Company */}
