@@ -35,11 +35,11 @@ export default function OnboardingPage() {
     categories: [],
   });
 
-    useEffect(() => {
-      if (data && !loading) {
-        router.push(role === "INTERVIEWER" ? "/dashboard" : "/explore");
-      }
-    }, [data, router]);
+  useEffect(() => {
+    if (data && !loading) {
+      router.push(role === "INTERVIEWER" ? "/dashboard" : "/explore");
+    }
+  }, [data, router]);
 
   const toggleCategory = (val: string) => {
     setForm((prev) => ({
@@ -193,9 +193,7 @@ export default function OnboardingPage() {
                 <div className="flex flex-wrap gap-2">
                   {CATEGORIES.map((cat) => {
                     if (!cat?.value) return null;
-
                     const active = form.categories.includes(cat.value);
-
                     return (
                       <button
                         key={cat.value}
@@ -213,7 +211,7 @@ export default function OnboardingPage() {
                   })}
                 </div>
 
-                {/* bio */}
+                {/* bio added*/}
                 <Textarea
                   rows={4}
                   maxLength={300}
@@ -225,7 +223,7 @@ export default function OnboardingPage() {
                 />
               </div>
             )}
-
+            {/* submit button */}
             <Button
               variant="gold"
               size="hero"
