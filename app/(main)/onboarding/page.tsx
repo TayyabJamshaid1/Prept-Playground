@@ -95,7 +95,21 @@ export default function OnboardingPage() {
             </span>
           </p>
         </div>
-
+  <div className="text-center mb-10">
+          <SectionLabel>Welcome to another</SectionLabel>
+          <h1 className="font-serif text-5xl leading-tight tracking-tighter mt-1">
+            <GrayTitleComponent>How will you be</GrayTitleComponent>
+            <br />
+            <GoldTitleComponent>using Prept?</GoldTitleComponent>
+          </h1>
+          <p className="text-sm text-stone-500 font-light mt-4 leading-relaxed">
+            This helps us personalise your experience.
+            <span className="text-stone-600">
+              {" "}
+              You can&apos;t change this later.
+            </span>
+          </p>
+        </div>
         {!role && (
           <div className="grid grid-cols-2 gap-4 w-full">
             {ONBOARDING_ROLES.map((r) => (
