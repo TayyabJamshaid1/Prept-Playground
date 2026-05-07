@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
@@ -169,7 +168,7 @@ export default function OnboardingPage() {
                   </div>
                 </div>
 
-                {/* years */}
+                {/* years  format*/}
                 <div className="flex flex-wrap gap-2">
                   {YEARS_OPTIONS.map((opt) => (
                     <button

@@ -27,6 +27,14 @@ export const AI_TAGS = [
   { label: "Behavioural", active: true },
   { label: "DSA", active: false },
 ];
+export const Mern_TAGS = [
+  { label: "Frontend Engineer", active: true },
+  { label: "L5 Level", active: true },
+  { label: "React Performance", active: false },
+  { label: "System Design", active: false },
+  { label: "Behavioural", active: true },
+  { label: "DSA", active: false },
+];
 
 export const SLOTS = [
   {
